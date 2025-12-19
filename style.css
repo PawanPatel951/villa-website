@@ -112,26 +112,37 @@ header {
         transform: translateY(0);
     }
 }
-
 .slider {
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
-.slide img {
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Image & Video common */
+.slide img,
+#video-slider {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Dark overlay */
 .slide::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(15, 23, 42, 0.65);
+    z-index: 1;
 }
 
+/* Caption */
 .caption {
     position: absolute;
     top: 50%;
@@ -162,29 +173,21 @@ header {
     margin: 18px 0 30px;
     line-height: 1.6;
 }
-#myVideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
+
+/* Button */
 .slider-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     padding: 14px 36px;
     background: orangered;
-    color: #f8fafc;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     border-radius: 30px;
     text-decoration: none;
     transition: all 0.35s ease;
     border: 2px solid transparent;
-}
-
-.slider-btn i {
-    font-size: 16px;
 }
 
 .slider-btn:hover {
@@ -194,14 +197,10 @@ header {
     transform: translateY(-3px);
 }
 
+/* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-
     .slider {
         height: 90vh;
-    }
-
-    .caption {
-        left: 8%;
     }
 
     .caption h2 {
@@ -211,29 +210,13 @@ header {
     .caption .sub-text {
         font-size: 14px;
     }
-
-    .slider-btn {
-        padding: 13px 30px;
-    }
 }
-@media (max-width: 478px) {
 
-    .slider {
+/* Mobile */
+@media (max-width: 478px) {
+     .slider {
         height: 80vh;
         overflow: hidden;
-    }
-
-    .slide {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
     }
 
     .caption {
@@ -244,6 +227,22 @@ header {
 
     .caption h2 {
         font-size: 28px;
+    }
+    
+   
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .slide img,
+    #video-slider {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;        
+        object-position: center;  
     }
 
     .caption .tagline {
@@ -260,7 +259,6 @@ header {
         font-size: 13px;
     }
 }
-
 
 
 
