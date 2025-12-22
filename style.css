@@ -218,7 +218,7 @@ header {
 }
 
 /* Mobile */
-@media (max-width: 393px) {
+@media (max-width: 478px) {
      .slider {
         height: 80vh;
         overflow: hidden;
@@ -436,7 +436,7 @@ main {
 }
 
 
-@media (max-width: 393px) {
+@media (max-width: 478px) {
 
     .about {
         flex-direction: column;
@@ -668,7 +668,7 @@ main {
     }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 478px) {
 
     .image-section {
         height: 350px;
@@ -987,7 +987,7 @@ main {
     }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 478px) {
 
     .best-deal {
         width: 100%;
@@ -1244,7 +1244,7 @@ main {
     }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 478px) {
 
     .rooms {
         padding: 10px;
@@ -1488,7 +1488,7 @@ main {
         height: 340px;
     }
 }
-@media (max-width: 393px) {
+@media (max-width: 478px) {
 
     .contact-heading {
         height: 420px;
