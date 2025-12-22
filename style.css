@@ -5,6 +5,11 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+html, body {
+    width: 100%;
+  overflow-x: hidden;
+} 
+
 header {
     position: sticky;
     top: 0;
