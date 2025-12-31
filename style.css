@@ -5,15 +5,16 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-html, body {
-    width: 100%;
-  overflow-x: hidden;
-} 
+body {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 9999;
+    background: transparent;
 }
 
 .navbar {
@@ -855,21 +856,7 @@ main {
     margin: 10px 0;
 }
 
-.Extra-info button {
-    padding: 12px 25px 12px 60px;
-    margin: 9px 12px;
-    border-radius: 25px;
-    background-color: #1c1c1c;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 0 15px rgba(155, 153, 153, 0.3);
-    transition: background-color 0.3s ease;
-}
+
 .Extra-info button{
     padding: 12px 25px 12px 60px;
     margin: 9px 12px;
@@ -1143,7 +1130,7 @@ main {
 
 .room-details .room-text h1 {
     font-size: 20px;
-    padding: 8px 12px 8px 20px;
+    padding: 8px 12px 8px 10px;
 }
 
 .room-details .room-text .room-properties {

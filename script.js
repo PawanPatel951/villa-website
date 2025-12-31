@@ -1,12 +1,4 @@
 
-let btn = document.getElementById("menuBtn");
-let menu = document.getElementById("navMenu");
-
-btn.addEventListener("click", () => {
-   
-        menu.style.position === "sticky" ? "none" : "sticky";
-});
-
 
 
 
@@ -49,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     video.addEventListener("ended", () => {
         icon.classList.replace("fa-pause", "fa-play");
     });
-
 });
 
 
@@ -63,7 +54,8 @@ const rooms = [
     bathrooms: 8,
     area: "545m2",
     floor: 3,
-    parking: "6 spots"
+    parking: "6 spots",
+    city: "bilara"
   },
   {
     image: "images/avi-werde-hHz4yrvxwlA-unsplash.jpg",
@@ -141,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p>Area: <span>${room.area}</span></p>
               <p>Floor: <span>${room.floor}</span></p>
               <p>Parking: <span>${room.parking}</span></p>
+              <p>City: <span>${room.city}</span></p>
           </div>
           <button>Schedule a visit</button>
       </div>
